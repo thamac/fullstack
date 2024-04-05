@@ -3,6 +3,14 @@
 
 <head>
     <title>Home</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid red;
+            border-spacing: 5px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -13,6 +21,44 @@
         <a href="about.html">About</a> |
         <a href="contact.html">Contact</a>
     </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>1-4</th>
+                <th>2-5</th>
+                <th>3-6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One</td>
+                <td rowspan="2">Two</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+                <td>One</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+                <td>Four</td>
+                <td colspan="2">Five</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td colspan="3">Footer</td>
+        </tr>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <hr>
 
     <ul>
         <li>Counter<ol>
