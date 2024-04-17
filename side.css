@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+}
+
+aside {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+    z-index: 1;
+}
+
+aside a:hover {
+    background-color: black;
+    color: red;
+}
+
+aside a {
+    background-color: darkred;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: white;
+    margin: 10px 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.content {
+    background-color: beige;
+    margin-left: 20%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.content img {
+    width: 100px;
+}
+
+.content p {
+    overflow: visible;
+}

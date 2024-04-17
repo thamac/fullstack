@@ -1,0 +1,42 @@
+dev docs:           https://devdocs.io/ 
+Mozilla developer:  https://developer.mozilla.org/en-US/ 
+For dummy images :  https://dummyimage.com/
+For lorem ipsum:    https://loremipsum.io/
+                    https://www.htmlstrip.com/lorem-ipsum-generator
+Color palettes:     https://coolors.co/
+Google Fonts:       https://fonts.google.com use the linkin way instead of the embedded way because of speed
+FontAwesome Icons:  https://fontawesome.com
+                    https://cdnjs.com/libraries/font-awesom
+
+
+Important performance parameters:
+LCP: Largest Contentful Paint (Loading performance); good >= 2.5sec, needs improvemnt 2.5sec > and > 4.0sec, poor <= 4.0sec
+FID: First Input Delay (Interactivity); good >= 100ms, needs improvemnt 100ms > and > 300ms, poor <= 300ms
+CLS: Cumulative Layout Shift (Visual Stability); good >= 0.1, needs improvemnt 0.1 > and > 0.25sec, poor <= 2.5sec
+
+LCP; good >= 2.5sec, needs improvemnt 2.5sec > and > 4.0sec, poor <= 4.0sec
+FID; good >= 100ms, needs improvemnt 100ms > and > 300ms, poor <= 300ms
+CLS; good >= 0.1, needs improvemnt 0.1 > and > 0.25sec, poor <= 2.5sec
+
+LCP; Check with the developers tab and inspect network waterfall to id potential bottlenecks
+    Reduce the resource loadtime of the bottlenecks by:
+        1. Compress images and use modern formats
+        2. Only use the bare minimum fonts you need to load the website and use a CDN
+        3. Render blocking js use server side frameworks like next.js instead of single page applications
+        4. Use preload links in html and fetchpriority
+
+FID; Use the web vitals plugin to inspect the reaction speed of interactions
+    Increase the reaction speed of the user interactions
+        1. Reduce js reaction time by moving your javascript into a worker with webworkers or partytown or use a lazy loader like reactlazy or frameworks like quick
+
+CLS; Use lighthouse in chrome devtools or use the webvitals extions
+    1. Dont use images without a width or height
+    2. Use srcset to use images under different conditions (desktop, laptop, mobile)
+    3. Do not show ads
+    4. Do not poorly designed animations
+ 
+Tools to use:
+Web vitals chrome extensions
+unlighthouse
+
+

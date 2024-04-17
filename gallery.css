@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+}
+
+footer p {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px 0px;
+    clear: both;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.col {
+    flex: 33.3%;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+@media (max-width: 680px) {
+    .col {
+        flex: 100%;
+    }
+}
